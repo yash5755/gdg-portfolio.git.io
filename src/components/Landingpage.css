@@ -2194,7 +2194,7 @@
   }
 
   .cta-button-card {
-    display: none !important;
+    display: block !important;
   }
 
   /* Show mobile See All Projects button */
