@@ -1,0 +1,410 @@
+/* Page Base */
+.projects-page {
+  background: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+  padding: 100px 0 30px;
+  /* ⬅ added top padding instead of margin on header */
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+  /* optional, ensures clean top edge */
+}
+
+/* 🔹 Back Button (Top Left) */
+.back-button {
+  position: fixed;
+  /* stays at top-left when scrolling */
+  top: 30px;
+  left: 40px;
+  z-index: 100;
+  padding: 8px 40px;
+  border-radius: 35px;
+  background-color: #ff6200;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  border: none;
+  /* removes any border */
+  outline: none;
+  /* removes focus outline */
+}
+
+.back-button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Optional: remove outline on focus too */
+.back-button:focus {
+  outline: none;
+  border: none;
+}
+
+
+/* Header */
+.projects-header {
+  text-align: center;
+  margin-top: 20px;
+  /* reduced since .projects-page now has padding-top */
+  margin-bottom: 80px;
+}
+
+.projects-title {
+  font-size: 84px;
+  font-weight: 200;
+  color: #454545;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.projects-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2b2b2b;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+/* Container */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1250px;
+  margin: 50px auto;
+  padding: 0 40px;
+  perspective: 1200px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  transform-style: preserve-3d;
+  background: #000000;
+  padding: 35px 60px;
+  border-radius: 20px;
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.112);
+  transition: all 0.6s ease;
+}
+
+.project-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* Image */
+.project-image {
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1.5px solid #666666;
+}
+
+/* Pareto card specific image border */
+.pareto-card .project-image {
+  border: 1.5px solid #666666;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+/* Contain image for specific cards */
+.contain-image .project-image img {
+  object-fit: contain;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Info */
+.project-info {
+  flex: 1;
+}
+
+.project-info h3 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #cfcfcf;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.skills-row img {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Link */
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff5e00;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  color: #fff;
+}
+
+/* More Projects Indicator */
+.more-projects-dots {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 100px auto 10px;
+  opacity: 0.4;
+}
+
+.more-projects-dots span {
+  font-size: 28px;
+  color: #666666;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .project-card {
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px 40px;
+    overflow: hidden;
+  }
+
+  .project-card:nth-child(even) {
+    flex-direction: column !important;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .project-info {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .project-info h3 {
+    font-size: 28px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .project-info p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .projects-title {
+    font-size: 42px;
+  }
+
+  .projects-subtitle {
+    font-size: 16px;
+  }
+
+  .back-button {
+    top: 15px;
+    left: 20px;
+    padding: 8px 25px;
+  }
+
+  .projects-container {
+    padding: 0 30px;
+    gap: 50px;
+  }
+}
+
+/* Mobile Landscape & Small Tablets (768px) */
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 80px 0 80px;
+  }
+
+  .projects-header {
+    margin-bottom: 60px;
+  }
+
+  .projects-title {
+    font-size: 36px;
+  }
+
+  .projects-subtitle {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+
+  .projects-container {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .project-card {
+    padding: 25px 25px;
+    gap: 25px;
+    overflow: hidden;
+  }
+
+  .project-info {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .project-info h3 {
+    font-size: 24px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .project-info p {
+    font-size: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .skills-row img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .back-button {
+    top: 12px;
+    left: 15px;
+    padding: 7px 22px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile Portrait (480px) */
+@media (max-width: 480px) {
+  .projects-page {
+    padding: 70px 0 70px;
+  }
+
+  .projects-title {
+    font-size: 28px;
+  }
+
+  .projects-subtitle {
+    font-size: 14px;
+  }
+
+  .projects-container {
+    padding: 0 15px;
+    gap: 30px;
+  }
+
+  .project-card {
+    padding: 20px 20px;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .project-info {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .project-info h3 {
+    font-size: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .project-info p {
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .skills-row img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .back-button {
+    top: 10px;
+    left: 12px;
+    padding: 6px 20px;
+    font-size: 13px;
+  }
+}
+
+/* Small Mobile (375px and below) */
+@media (max-width: 375px) {
+  .projects-title {
+    font-size: 24px;
+  }
+
+  .projects-subtitle {
+    font-size: 13px;
+  }
+
+  .projects-container {
+    padding: 0 12px;
+    gap: 25px;
+  }
+
+  .project-card {
+    padding: 18px 18px;
+    overflow: hidden;
+  }
+
+  .project-info {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .project-info h3 {
+    font-size: 18px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .project-info p {
+    font-size: 13px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}

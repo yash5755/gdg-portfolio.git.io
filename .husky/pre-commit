@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+# Validate that index.html doesn't contain build artifact references
+if grep -q '/assets/index-\|/assets/vendor-' index.html; then
+  echo "❌ ERROR: index.html contains build artifact references!"
+  echo ""
+  echo "The source index.html should NOT contain references like:"
+  echo "  - /assets/index-*.js"
+  echo "  - /assets/vendor-*.js"
+  echo "  - /assets/index-*.css"
+  echo ""
+  echo "These are automatically added during the build process."
+  echo ""
+  echo "To fix this, run:"
+  echo "  git restore index.html"
+  echo ""
+  exit 1
+fi
+
+echo "✅ index.html validation passed"

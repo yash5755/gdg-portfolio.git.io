@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background: #151515; /* base black background */
+  background-color: #181818;
+}
+
+/* Wrapper to create permanent rounded black border outside app */
+.app-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible; /* allow scrolling inside */
+  border-radius: 50px;
+  background-color: #000;
+}
+
+.app-wrapper::before {
+  content: "";
+  position: fixed; /* always stays in place */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  pointer-events: none; /* allow clicks/scroll inside */
+  box-shadow: 0 0 0 9999px #000; /* massive shadow to fill outside as black */
+  z-index: 9999; /* on top visually */
+  
+}
+.app {
+  width: 100%;
+  min-height: 100%;
+  overflow-y: auto;      /* scroll inner content */
+  position: relative;
+}
