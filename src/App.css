@@ -42,3 +42,11 @@ html, body, #root {
   overflow-y: auto;      /* scroll inner content */
   position: relative;
 }
+
+/* Keep layout centered and constrained on very wide viewports
+   (prevents layout break when mobile browsers request desktop site) */
+.app {
+  max-width: 1326px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
