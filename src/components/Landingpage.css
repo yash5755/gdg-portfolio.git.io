@@ -2466,7 +2466,7 @@
   width: 400px;
   height: 400px;
   border-radius: 20px;
-  background: url("/your-photo.jpg") center/cover no-repeat;
+  background: url("../picc.jpg") center/cover no-repeat;
   filter: blur(25px) brightness(0.6);
   opacity: 0.7;
   z-index: 1;
