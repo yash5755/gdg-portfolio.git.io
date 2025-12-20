@@ -2534,3 +2534,10 @@
   will-change: transform;
   /* improves performance */
 }
+
+/* Mobile: ensure top of hero/profile image is visible (don't crop hair) */
+@media (max-width: 480px) {
+  .image, .profile-img {
+    object-position: center top !important;
+  }
+}
