@@ -1694,15 +1694,10 @@
     margin-bottom: 1.5rem;
   }
 
-  /* Show only first card on mobile */
-  .card:nth-child(1) {
-    display: flex;
-  }
-
-  .card:nth-child(2),
-  .card:nth-child(3),
-  .card:nth-child(4) {
-    display: none;
+  /* Show all cards on mobile (stack vertically) */
+  .card {
+    display: block;
+    width: 100%;
   }
 
   .card {
@@ -1731,7 +1726,7 @@
   }
 
   .cta-button-card {
-    display: none !important;
+    display: block !important;
   }
 
   /* Featured News - Mobile */
