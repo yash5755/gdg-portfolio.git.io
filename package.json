@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yash5755.github.io",
+  "homepage": "https://yash5755.github.io/gdg-portfolio-competation/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
