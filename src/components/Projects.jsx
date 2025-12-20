@@ -6,76 +6,52 @@ import ParticleBackground from "./ParticleBackground";
 function Projects({ onBack }) {
   const projects = [
     {
-      title: "Paisa+ A Finance & Management App",
-      img: "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765196163/Screenshot_2025-12-08_at_1.03.38_PM_x7j0od.png",
-      desc: "An all-in-one AI-powered platform for personal finance management featuring expense tracking, budget planning, investment insights, and automated financial reporting with smart analytics.",
-      link: "https://github.com/yash5755/-Paisa-A-Finance-Investment-Management-App",
+      title: "EduSphere A College Management System",
+      img: "https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766232895/pro1_zczet2.png",
+      desc: "College Management System powered by AI, designed to solve real-time challenges faced by students, faculty, and administrators. Features include AI-driven attendance tracking, smart timetable generation, automated grading, and personalized learning paths to enhance the educational experience.",
+      link: "https://github.com/yash5755/college-management-system",
       skills: [
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/react_ijir1p.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/nodejs_y6ptov.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/html_n9844z.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/css_gbkd0w.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/Tailwind_b15bq7.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/sql_cku96s.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/figma_zy4ykk.png"
+        "https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766232116/flutter_pjsw9l.png",
+        "https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766232116/dart_hg6caz.jpg",
+        "https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766228320/supabase_m4pibe.jpg",
       ]
     },
     {
-      title: "Krishi Mitra",
-      img: "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765008355/krishi_mitra_cuaclb.webp",
-      desc: "Comprehensive agricultural platform connecting farmers with markets, equipment rentals, expert advice, and logistics. Features AI-powered crop recommendations and real-time marketplace for buying and selling produce.",
-      link: "",
+      title: "Raktkosh",
+      img: "https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766233220/blood2_xln2kc.png",
+      desc: "Raktkosh is a life-saving Progressive Web App (PWA) designed to address critical blood shortage emergencies by creating a real-time ecosystem connecting blood donors, receivers, and blood banks.",
+      link: "https://github.com/yash5755",
       skills: [
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/react_ijir1p.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/html_n9844z.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/css_gbkd0w.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/nodejs_y6ptov.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525707/mongodb_o5gxo2.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525707/next_pw23l9.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/gemini_x6sreu.jpg"
+        "https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766232116/flutter_pjsw9l.png",
+        "https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766232116/dart_hg6caz.jpg",
+        "https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766228320/supabase_m4pibe.jpg",
       ],
       className: "contain-image"
     },
     {
-      title: "Genora One",
-      img: "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765204073/Screenshot_2025-12-08_at_7.10.49_PM_pumgul.png",
-      desc: "Multi-functional AI platform combining image generation, content creation, email parsing, video script writing, and caption generation into one seamless experience. Designed for efficiency, it helps creators produce high-quality content faster by centralizing all essential AI tools.",
-      link: "https://github.com/yash5755/Genora-One-A-Saas-Platform",
+      title: "Campus Connect",
+      img: "https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766234207/Screenshot_2025-06-29_223035_iikxxm.png",
+      desc: "Designed to solve real-time challenges faced by students, faculty, and administrators. Features include AI-driven attendance tracking, smart timetable generation, automated grading, and personalized learning paths to enhance the educational experience. ",
+      link: "https://github.com/yash5755/vvceweb",
       skills: [
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/react_ijir1p.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/nodejs_y6ptov.png",
         "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/html_n9844z.png",
         "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/css_gbkd0w.png",
         "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/Tailwind_b15bq7.png",
         "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/sql_cku96s.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/figma_zy4ykk.png"
       ]
     },
     {
-      title: "Earthquake In-depth Analysis",
-      img: "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765198075/Screenshot_2025-12-08_at_6.17.23_PM_dpnms3.png",
-      desc: "Comprehensive data analysis and visualization of earthquake patterns from 1900-2014.",
-      link: "https://public.tableau.com/views/EarthquakeIndepthAnalysis/EarthquakeFrom1900-2014",
+      title: "Portfolio",
+      img: "https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766234565/Screenshot_2025-12-20_181201_sy8yqf.png",
+      desc: "Portfolio website built in the workshop conducted by GDG with OSL on 19th December 2025.",
+      link: "https://github.com/yash5755",
       skills: [
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/tableau_mhdzxn.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/sql_cku96s.png"
+         "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/html_n9844z.png",
+        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/css_gbkd0w.png",
+        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png"
       ]
     },
-    {
-      title: "Pareto Based Optimization",
-      img: "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765008350/pareto_y3grxx.webp",
-      desc: "Smart agricultural tool that recommends optimal fertilizer usage and water consumption based on your land size and local weather conditions. Uses advanced algorithms to balance multiple farming objectives and maximize crop yield while minimizing resource waste.",
-      link: "https://pareto-based-analysis-app.streamlit.app/",
-      skills: [
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/react_ijir1p.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png",
-        "https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525707/python_nfqcqe.png"
-      ],
-      className: "pareto-card"
-    },
+  
   ];
 
   return (

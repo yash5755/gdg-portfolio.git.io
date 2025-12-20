@@ -164,15 +164,15 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
               I can say i'm quite good at</p>
 
             <div className="small-images-grid">
-              <div className="small-img">
+              {/* <div className="small-img">
                 <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/react_ijir1p.png" alt="img1" />
-              </div>
+              </div> */}
               <div className="small-img">
                 <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png" alt="img2" />
               </div>
-              <div className="small-img">
+              {/* <div className="small-img">
                 <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/sql_cku96s.png" alt="img3" />
-              </div>
+              </div> */}
               <div className="small-img">
                 <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/nodejs_y6ptov.png" alt="img4" />
               </div>
@@ -183,23 +183,23 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
                 <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/css_gbkd0w.png" alt="img6" />
               </div>
               <div className="small-img">
-                <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/figma_zy4ykk.png" alt="img7" />
+                <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766228321/java_zrnojc.png" alt="img7" />
               </div>
               <div className="small-img">
-                <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/Tailwind_b15bq7.png" alt="img8" />
+                <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766228320/c_program_qphxzq.jpg" alt="img8" />
               </div>
               <div className="small-img">
-                <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/tableau_mhdzxn.png" alt="img9" />
+                <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766228320/supabase_m4pibe.jpg" alt="img9" />
               </div>
-              <div className="small-img">
+              {/* <div className="small-img">
                 <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/icons8-redux-96_aomziq.png" alt="img10" />
               </div>
               <div className="small-img">
                 <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525707/next_pw23l9.png" alt="img11" />
-              </div>
-              <div className="small-img">
+              </div> */}
+              {/* <div className="small-img">
                 <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/fastapi_ghpk7j.webp" alt="img12" />
-              </div>
+              </div> */}
               <div className="small-img skill-loading">
                 <div className="spinner"></div>
               </div>
@@ -287,71 +287,59 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
         </p>
 
         <div className="card-grid ">
-          <a href="https://github.com/yash5755/-Paisa-A-Finance-Investment-Management-App" target="_blank" className="card">
+          <a href="https://github.com/yash5755/college-management-system" target="_blank" className="card">
             <div className="card-image">
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765196163/Screenshot_2025-12-08_at_1.03.38_PM_x7j0od.png" alt="paisa+" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766232895/pro1_zczet2.png" alt="paisa+" />
             </div>
-            <h3>"Paisa+" A finance & management app </h3>
-            <p>An all-in-one AI-powered platform for personal finance management featuring expense tracking, budget planning, investment insights, and automated financial reporting with smart analytics.</p>
+            <h3>EduSphere A College Management System </h3>
+            <p>College Management System powered by AI, designed to solve real-time challenges faced by students, faculty, and administrators. Features include AI-driven attendance tracking, smart timetable generation, automated grading, and personalized learning paths to enhance the educational experience.</p>
             <div className="skill-icons">
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/react_ijir1p.png" alt="React" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/nodejs_y6ptov.png" alt="Node.js" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/html_n9844z.png" alt="HTML" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/css_gbkd0w.png" alt="CSS" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png" alt="JavaScript" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/Tailwind_b15bq7.png" alt="Tailwind" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/sql_cku96s.png" alt="SQL" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/figma_zy4ykk.png" alt="Figma" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766232116/flutter_pjsw9l.png" alt="Flutter" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766232116/dart_hg6caz.jpg" alt="Dart" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766228320/supabase_m4pibe.jpg" alt="HTML" />
             </div>
           </a>
 
           <div className="card">
             <div className="card-image">
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765008355/krishi_mitra_cuaclb.webp" alt="Krishi Mitra" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766233220/blood2_xln2kc.png" alt="Krishi Mitra" />
             </div>
-            <h3>Krishi Mitra</h3>
-            <p>Comprehensive agricultural platform connecting farmers with markets, equipment rentals, expert advice, and logistics. Features AI-powered crop recommendations and real-time marketplace for buying and selling produce.</p>
+            <h3>Raktkosh</h3>
+            <p>Raktkosh is a life-saving Progressive Web App (PWA) designed to address critical blood shortage emergencies by creating a real-time ecosystem connecting blood donors, receivers, and blood banks.</p>
             <div className="skill-icons">
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/react_ijir1p.png" alt="React" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/html_n9844z.png" alt="HTML" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/css_gbkd0w.png" alt="CSS" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png" alt="JavaScript" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/nodejs_y6ptov.png" alt="Node.js" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525707/mongodb_o5gxo2.png" alt="MongoDB" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525707/next_pw23l9.png" alt="Next.js" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766232116/flutter_pjsw9l.png" alt="Flutter" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766232116/dart_hg6caz.jpg" alt="Dart" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766228320/supabase_m4pibe.jpg" alt="HTML" />
               <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/gemini_x6sreu.jpg" alt="Gemini AI" />
             </div>
           </div>
 
-          <a href="https://github.com/yash5755/Genora-One-A-Saas-Platform" target="_blank" className="card">
+          <a href="https://github.com/yash5755/vvceweb" target="_blank" className="card">
             <div className="card-image">
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765204073/Screenshot_2025-12-08_at_7.10.49_PM_pumgul.png" alt="Genora One" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766234207/Screenshot_2025-06-29_223035_iikxxm.png" alt="Genora One" />
             </div>
-            <h3>Genora One</h3>
-            <p>Multi-functional AI platform combining image generation, content creation, email parsing, video script writing, and caption generation into one seamless experience. Designed for efficiency, it helps creators produce high-quality content faster by centralizing all essential AI tools.</p>
+            <h3>Campus Connect</h3>
+            <p>Designed to solve real-time challenges faced by students, faculty, and administrators. Features include AI-driven attendance tracking, smart timetable generation, automated grading, and personalized learning paths to enhance the educational experience. </p>
             <div className="skill-icons">
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/react_ijir1p.png" alt="React" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/nodejs_y6ptov.png" alt="Node.js" />
               <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/html_n9844z.png" alt="HTML" />
               <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/css_gbkd0w.png" alt="CSS" />
               <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png" alt="JavaScript" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/Tailwind_b15bq7.png" alt="Tailwind" />
               <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/sql_cku96s.png" alt="SQL" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/figma_zy4ykk.png" alt="Figma" />
             </div>
           </a>
 
 
           <a href="https://public.tableau.com/views/EarthquakeIndepthAnalysis/EarthquakeFrom1900-2014?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" className="card earthquake-card">
             <div className="card-image">
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765198075/Screenshot_2025-12-08_at_6.17.23_PM_dpnms3.png" alt="Data Analysis" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766234565/Screenshot_2025-12-20_181201_sy8yqf.png" alt="Data Analysis" />
             </div>
-            <h3>Earthquake Indepth Analysis</h3>
-            <p>Comprehensive data analysis and visualization of earthquake patterns from 1900-2014.
+            <h3>Portfolio</h3>
+            <p>Portfolio website built in the workshop conducted by GDG with OSL on 19th December 2025.
             </p>
             <div className="skill-icons">
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/tableau_mhdzxn.png" alt="Tableau" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/sql_cku96s.png" alt="SQL" />
+             <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/html_n9844z.png" alt="HTML" />
+              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/css_gbkd0w.png" alt="CSS" />
+              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png" alt="JavaScript" />
             </div>
           </a>
         </div>
@@ -392,30 +380,30 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
         {/* Only 2 visible cards */}
         <div className="news-container">
           <div className="news-item">
-            <div className="news-img" style={{ backgroundImage: "url('https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/vice_rgdf0h.jpg')" }}></div>
+            <div className="news-img" style={{ backgroundImage: "url('https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766225811/best_award_jbht2x.jpg')" }}></div>
             <div className="news-content">
-              <h2>VICE PRESIDENT</h2>
+              <h2>Best Innovation Project Award</h2>
               <p className="news-text">
-                Appointed as Vice-President of the I2IC-TPO Student Council (2024-25),
-                leading 140+ council members and successfully organizing major
-                initiatives including alumni meets (Saturday Clubs), a 30-hour mega
-                hybrid hackathon (Nirmaan), multiple department-level hackathons,
-                guidance sessions, and more.
+                Grateful to share that our team received the Best Innovation Award at the National Level Project Expo – V-Vision 2025, organized by Vidya Vikas Institute of Technology, Mysore, held on 11th December 2025.
+                This achievement was possible with the collective efforts of my teammates Yuvika A Jain, YASHAS U, and Vibha .S. Competing among 50+ teams, it was a valuable opportunity to present our work and learn from the experience.
+
               </p>
-              <a href="https://www.instagram.com/i2ioc.tpo.vit?igsh=MXU2a3N6b2lwb212OA==" target="_blank" rel="noopener noreferrer" className="news-link">
+              <a href="https://www.instagram.com/p/DSINxoQjt8Y/?igsh=MWI0dXJ0YXhzdg==" target="_blank" rel="noopener noreferrer" className="news-link">
                 View Details →
               </a>
             </div>
           </div>
 
           <div className="news-item">
-            <div className="news-img" style={{ backgroundImage: "url('https://res.cloudinary.com/dphe5xhwj/image/upload/v1765105228/finance_goacsd.jpg')" }}></div>
+            <div className="news-img" style={{ backgroundImage: "url('https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766226384/best_speaker_an6l5w.jpg')" }}></div>
             <div className="news-content">
-              <h2>Finance & Sponsorship Secretary</h2>
+              <h2>Best Speaker</h2>
               <p className="news-text">
-                Served as Finance & Sponsorship In-charge for Gandharva-2025, the college annual fest. Successfully partnered with multiple renowned brands to secure event funding. Handled all aspects of financial management including sponsorship coordination, budget distribution, and comprehensive financial documentation.
+                I won the Best Speaker Award at Policython – The Ultimate Debate at VVCE! Presented strong arguments as part of the ruling party and learned a lot about policy, governance, and public speaking.
+Honoured to receive the book “The India Way” by Dr. S. Jaishankar as a prize.
+Grateful for the experience and excited to grow further! 
               </p>
-              <a href="https://www.instagram.com/student_council_viit?igsh=dHNncWp2OG5wYmt6" target="_blank" rel="noopener noreferrer" className="news-link">
+              <a href="https://www.linkedin.com/posts/ryashu_thrilled-to-share-that-i-won-the-best-speaker-activity-7403636014898208768-l1h6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFMrWvYB1ukNfb0ciqJYPC50TnD6-6SgmtE" target="_blank" rel="noopener noreferrer" className="news-link">
                 View Details →
               </a>
             </div>
@@ -456,7 +444,7 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
               crafted with experience and dedication. Download my resume below.
             </p>
             <a
-              href="https://github.com/yash5755/resume"
+              href="https://drive.google.com/file/d/1VeVWNIYsUpwFoq712WjJwwS6OYQO5QL1/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
               className="resume-btn"
@@ -502,8 +490,8 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
           <div className="footer-contact-item">
             <span className="footer-label">Phone:</span>
             <span className="footer-icon" aria-hidden="true">📞</span>
-            <a href="tel:+917841099907" className="footer-link">
-              +91 7841099907
+            <a href="tel:+919686214691" className="footer-link">
+              +91 9686214691
             </a>
           </div>
 
@@ -522,7 +510,7 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
             </a>
 
             <a
-              href="https://www.instagram.com/pratik_j_mahajan?igsh=MTdyNmprYTU4d2s4bw=="
+              href="https://www.instagram.com/yash1th_r?igsh=c2V4Y2x2dXg3ajZo"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -540,7 +528,7 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
             </a>
 
             <a
-              href="https://wa.me/917841099907"
+              href="https://wa.me/919686214691"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
