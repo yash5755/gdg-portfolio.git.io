@@ -112,7 +112,7 @@
   font-family: 'Segoe UI', sans-serif;
   color: white;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 50px;
   box-sizing: border-box;
   margin-bottom: 0;
@@ -248,9 +248,9 @@
   gap: 20px;
   flex-wrap: wrap;
   max-height: none;
-  min-height: 250px;
+  min-height: auto;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible;
   text-decoration: none;
   transition: ease-in-out 0.4s;
 }
@@ -1520,8 +1520,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 140px;
-    padding-top: 0 !important;
+    height: 85px;
+    padding-top: 10px !important;
+    min-height: 85px;
   }
 
   .headline-scroll {
@@ -1531,7 +1532,7 @@
   }
 
   .headline-text {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     color: rgb(0, 0, 0);
     text-transform: lowercase;
@@ -1540,7 +1541,7 @@
   .arrow {
     display: inline-block;
     transition: transform 0.6s ease;
-    margin: 0 10px;
+    margin: 0 9px;
     color: #f2ff00;
     font-weight: 300;
   }
@@ -1634,21 +1635,30 @@
   /* Card Container - Mobile Stack */
   .card-container {
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 15px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
-    gap: 25px;
+    gap: 15px;
+    min-height: auto;
+    overflow: visible;
   }
 
   .card-left {
     border-right: none;
-    border-bottom: 2px solid #a2a2a2;
-    padding-bottom: 25px;
+    border-bottom: 1.5px solid #a2a2a2;
+    padding-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
     height: auto;
+    width: 100%;
+  }
+
+  .card-right {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
   }
 
   .card-left p,
@@ -2056,8 +2066,9 @@
 
   /* Hero Section */
   .hero-section {
-    padding: 30px 20px 25px;
+    padding: 30px 15px 25px;
     border-radius: 25px;
+    overflow: visible;
   }
 
   .hero-top {
@@ -2073,8 +2084,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 140px;
-    padding-top: 0 !important;
+    height: 80px;
+    padding-top: 15px !important;
+    min-height: 80px;
   }
 
   .headline-scroll {
@@ -2126,9 +2138,26 @@
   }
 
   .card-container {
-    padding: 20px;
+    padding: 20px 15px;
     border-radius: 22px;
-    gap: 20px;
+    gap: 15px;
+    flex-direction: column;
+    min-height: auto;
+    overflow: visible;
+  }
+
+  .card-left {
+    border-right: none;
+    border-bottom: 1.5px solid #a2a2a2;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card-right {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
   }
 
   .card-left p,
@@ -2359,8 +2388,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 140px;
-    padding-top: 0 !important;
+    height: 70px;
+    padding-top: 10px !important;
+    min-height: 70px;
   }
 
   .headline-scroll {
