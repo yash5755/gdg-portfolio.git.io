@@ -2549,6 +2549,31 @@
   /* improves performance */
 }
 
+/* Mobile-specific headline fixes */
+@media (max-width: 768px) {
+  .headline {
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+  }
+
+  .headline-scroll {
+    display: flex;
+    white-space: nowrap;
+    -webkit-animation: scrollLeft 15s linear infinite !important;
+    animation: scrollLeft 15s linear infinite !important;
+    -webkit-animation-play-state: running !important;
+    animation-play-state: running !important;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .headline-scroll.reverse {
+    -webkit-animation: scrollRight 15s linear infinite !important;
+    animation: scrollRight 15s linear infinite !important;
+  }
+}
+
 /* Mobile: ensure top of hero/profile image is visible (don't crop hair) */
 @media (max-width: 480px) {
   .image, .profile-img {
