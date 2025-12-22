@@ -2551,9 +2551,17 @@
 
 /* Mobile-specific headline fixes */
 @media (max-width: 768px) {
+  .video-grid-section {
+    min-height: 24vh;
+  }
+
   .headline {
     -webkit-overflow-scrolling: touch;
     overflow: hidden;
+    height: 80px;
+    padding-top: 20px;
+    position: relative;
+    bottom: auto;
   }
 
   .headline-scroll {
@@ -2566,6 +2574,14 @@
     will-change: transform;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+  }
+
+  .headline-text {
+    font-size: 14px;
+  }
+
+  .arrow {
+    margin: 0 8px;
   }
 
   .headline-scroll.reverse {
