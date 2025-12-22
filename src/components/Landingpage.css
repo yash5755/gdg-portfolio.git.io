@@ -456,7 +456,11 @@
 .headline-scroll {
   display: flex;
   white-space: nowrap;
+  -webkit-animation: scrollLeft 15s linear infinite;
   animation: scrollLeft 15s linear infinite;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  will-change: transform;
 }
 
 /* Generate repeating text using pseudo-elements */
@@ -488,6 +492,11 @@
   }
 }
 
+@-webkit-keyframes scrollLeft {
+  0% { -webkit-transform: translateX(0); transform: translateX(0); }
+  100% { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+}
+
 /* Scroll right animation (scrolling up) */
 @keyframes scrollRight {
   0% {
@@ -499,9 +508,17 @@
   }
 }
 
+@-webkit-keyframes scrollRight {
+  0% { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+  100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+
 /* Class to reverse animation direction */
 .headline-scroll.reverse {
+  -webkit-animation: scrollRight 15s linear infinite;
   animation: scrollRight 15s linear infinite;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
 }
 
 /* Rotate arrow when scrolling up */
