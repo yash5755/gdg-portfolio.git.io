@@ -2588,7 +2588,7 @@
   }
 
   .headline {
-    overflow: hidden;
+    overflow: visible;
     height: 65px;
     padding-top: 10px;
     position: relative;
@@ -2597,6 +2597,7 @@
     padding-left: 0;
     padding-right: 0;
     border-radius: 0;
+    z-index: 100;
   }
 
   .headline-scroll {
@@ -2607,6 +2608,8 @@
     will-change: transform;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    z-index: 101;
+    position: relative;
   }
 
   .headline-text {
