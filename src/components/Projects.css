@@ -17,7 +17,7 @@
   /* stays at top-left when scrolling */
   top: 30px;
   left: 40px;
-  z-index: 100;
+  z-index: 1000;
   padding: 8px 40px;
   border-radius: 35px;
   background-color: #ff6200;
@@ -41,6 +41,15 @@
 .back-button:focus {
   outline: none;
   border: none;
+}
+
+/* Desktop: Increase z-index to stay above project cards */
+@media (min-width: 1024px) {
+  .back-button {
+    z-index: 1001;
+    top: 35px;
+    left: 60px;
+  }
 }
 
 

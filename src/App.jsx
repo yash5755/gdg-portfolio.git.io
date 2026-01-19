@@ -13,7 +13,29 @@ function App() {
   const [showProjects, setShowProjects] = useState(false);
   const [showActivities, setShowActivities] = useState(false);
 
+  // Handle browser back button
+  useEffect(() => {
+    const handlePopState = () => {
+      if (showProjects || showActivities) {
+        setShowProjects(false);
+        setShowActivities(false);
+      }
+    };
 
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [showProjects, showActivities]);
+
+  // Push state when navigating to projects or activities
+  const handleSeeAllProjects = () => {
+    window.history.pushState({ page: 'projects' }, '');
+    setShowProjects(true);
+  };
+
+  const handleSeeMoreActivities = () => {
+    window.history.pushState({ page: 'activities' }, '');
+    setShowActivities(true);
+  };
 
   if (showIntro) {
     return <Introduction onFinish={() => setShowIntro(false)} />;
@@ -26,10 +48,11 @@ function App() {
           size={showActivities ? 5 : 12}
           disableHoverEffects={showActivities}
         />
-        {!showProjects && !showActivities && <Nav onSeeAllProjects={() => setShowProjects(true)} />}
+        {!showProjects && !showActivities && <Nav onSeeAllProjects={handleSeeAllProjects} />}
         {showActivities ? (
           <ExtraActivity
             onBack={() => {
+              window.history.back();
               setShowActivities(false);
               // Optional: scroll back to activities section on landing
               setTimeout(() => {
@@ -40,6 +63,7 @@ function App() {
           />
         ) : showProjects ? (
           <Projects onBack={() => {
+            window.history.back();
             setShowProjects(false);
             // After closing Projects, scroll to the projects section on Landing
             setTimeout(() => {
@@ -49,8 +73,8 @@ function App() {
           }} />
         ) : (
           <LandingPage
-            onSeeAllProjects={() => setShowProjects(true)}
-            onSeeMoreActivities={() => setShowActivities(true)}
+            onSeeAllProjects={handleSeeAllProjects}
+            onSeeMoreActivities={handleSeeMoreActivities}
           />
         )}
       </div>

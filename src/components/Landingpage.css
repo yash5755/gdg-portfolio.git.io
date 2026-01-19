@@ -1537,20 +1537,19 @@
   }
 
   .video-grid-section {
-    background: rgb(61, 195, 213);
+    background: #0b0b0b;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
   }
 
-  /* Show mobile See All Projects button */
+  .card-section {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+
   .mobile-see-all-container {
     display: flex !important;
   }
-
-  /* Hide desktop See All Projects button on mobile */
-  .desktop-see-all {
-    display: none !important;
-  }
-
-
 
   /* Glass Box - Mobile Optimized */
   .box {
