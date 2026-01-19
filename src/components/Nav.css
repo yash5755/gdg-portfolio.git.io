@@ -285,3 +285,50 @@
     padding: 16px 20px;
   }
 }
+
+/* ========================================
+   DESKTOP & LAPTOP OPTIMIZATIONS
+   ======================================== */
+
+/* Desktop: Optimize navbar for larger screens (1024px+) */
+@media (min-width: 1024px) {
+  .navbar {
+    top: 30px;
+    left: 80px;
+    right: 80px;
+    padding: 28px 35px;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    gap: 2.5rem;
+  }
+
+  .nav-links li {
+    font-size: 1.15rem;
+  }
+}
+
+/* Large Desktop: Further optimize (1400px+) */
+@media (min-width: 1400px) {
+  .navbar {
+    left: 100px;
+    right: 100px;
+    padding: 30px 40px;
+  }
+
+  .logo {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    gap: 3rem;
+  }
+
+  .nav-links li {
+    font-size: 1.2rem;
+  }
+}

@@ -327,21 +327,6 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
               <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/sql_cku96s.png" alt="SQL" />
             </div>
           </a>
-
-
-          <a href="https://public.tableau.com/views/EarthquakeIndepthAnalysis/EarthquakeFrom1900-2014?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" className="card earthquake-card">
-            <div className="card-image">
-              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1766234565/Screenshot_2025-12-20_181201_sy8yqf.png" alt="Data Analysis" />
-            </div>
-            <h3>Portfolio</h3>
-            <p>Portfolio website built in the workshop conducted by GDG with OSL on 19th December 2025.
-            </p>
-            <div className="skill-icons">
-             <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/html_n9844z.png" alt="HTML" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525706/css_gbkd0w.png" alt="CSS" />
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/js_n0jchn.png" alt="JavaScript" />
-            </div>
-          </a>
         </div>
         <div className="mobile-see-all-container">
           <button

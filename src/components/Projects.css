@@ -408,3 +408,97 @@
     overflow-wrap: break-word;
   }
 }
+
+/* ========================================
+   DESKTOP & LAPTOP OPTIMIZATIONS
+   ======================================== */
+
+/* Desktop: Optimize for larger screens (1024px+) */
+@media (min-width: 1024px) {
+  .projects-page {
+    padding: 120px 0 50px;
+  }
+
+  .projects-container {
+    max-width: 1400px;
+    padding: 0 60px;
+    gap: 70px;
+  }
+
+  .project-card {
+    padding: 40px 70px;
+    gap: 70px;
+  }
+
+  .project-image {
+    width: 380px;
+    height: 380px;
+  }
+
+  .project-info h3 {
+    font-size: 36px;
+  }
+
+  .project-info p {
+    font-size: 17px;
+  }
+
+  .back-button {
+    top: 35px;
+    left: 60px;
+    padding: 10px 45px;
+    font-size: 17px;
+  }
+}
+
+/* Large Desktop: Further optimization (1400px+) */
+@media (min-width: 1400px) {
+  .projects-title {
+    font-size: 96px;
+  }
+
+  .projects-subtitle {
+    font-size: 20px;
+  }
+
+  .projects-container {
+    max-width: 1500px;
+    padding: 0 80px;
+    gap: 80px;
+  }
+
+  .project-card {
+    padding: 45px 80px;
+    gap: 80px;
+  }
+
+  .project-image {
+    width: 400px;
+    height: 400px;
+  }
+
+  .project-info h3 {
+    font-size: 40px;
+  }
+
+  .project-info p {
+    font-size: 18px;
+  }
+}
+
+/* Extra Large Desktop (1920px+) */
+@media (min-width: 1920px) {
+  .projects-container {
+    max-width: 1800px;
+  }
+
+  .project-card {
+    padding: 50px 100px;
+    gap: 100px;
+  }
+
+  .project-image {
+    width: 450px;
+    height: 450px;
+  }
+}

@@ -171,12 +171,11 @@
 }
 
 .image {
-  width: 103%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center top;
   display: block;
-
-
 }
 
 .hero-text-content {
@@ -411,14 +410,14 @@
 .video-grid-section {
   width: 100%;
   min-height: 16vh;
-  background: #ececec;
+  background: #0b0b0b;
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 1;
   /* above video */
-  border-radius: 0 0 50px 50px;
-  margin-bottom: -50px;
+  border-radius: 0;
+  margin-bottom: 0;
   overflow: visible;
 }
 
@@ -456,16 +455,11 @@
 .headline-scroll {
   display: flex;
   white-space: nowrap;
-  -webkit-animation: scrollLeft 15s linear infinite;
   animation: scrollLeft 15s linear infinite;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
   will-change: transform;
-  /* Ensure smooth scrolling on mobile */
-  -webkit-overflow-scrolling: touch;
-  /* Prevent layout shifts */
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Generate repeating text using pseudo-elements */
@@ -487,15 +481,6 @@
 }
 
 /* Scroll left animation (default - scrolling down) */
-@-webkit-keyframes scrollLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 @keyframes scrollLeft {
   0% {
     transform: translateX(0);
@@ -505,17 +490,18 @@
   }
 }
 
-@-webkit-keyframes scrollRight {
-  0% { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
-  100% { -webkit-transform: translateX(0); transform: translateX(0); }
+@keyframes scrollRight {
+  0% { 
+    transform: translateX(-50%); 
+  }
+  100% { 
+    transform: translateX(0); 
+  }
 }
 
 /* Class to reverse animation direction */
 .headline-scroll.reverse {
-  -webkit-animation: scrollRight 15s linear infinite;
   animation: scrollRight 15s linear infinite;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
 }
 
 /* Rotate arrow when scrolling up */
@@ -525,16 +511,16 @@
 
 
 
-/* Card section (230vh) */
+/* Card section (reduced height for 3 projects) */
 .card-section {
-  min-height: 285vh;
+  min-height: auto;
   background: #0b0b0b;
   color: white;
-  padding: 12rem 3rem 15rem 3rem;
+  padding: 6rem 3rem 6rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: -50px;
+  margin-bottom: 0;
   position: relative;
   z-index: 0;
   overflow-x: hidden;
@@ -948,15 +934,11 @@
   text-align: center;
   overflow: hidden;
   z-index: 10;
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   padding: 80px 120px;
-
-  /* 🌫️ Full glass look */
-  backdrop-filter: blur(65px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.08);
+  background: #0b0b0b;
+  border-top: none;
+  border-bottom: none;
+  box-shadow: none;
 }
 
 /* 🔮 Gradient Mesh behind everything */
@@ -2596,7 +2578,6 @@
   }
 
   .headline {
-    -webkit-overflow-scrolling: touch;
     overflow: hidden;
     height: 85px;
     padding-top: 15px;
@@ -2608,10 +2589,8 @@
   .headline-scroll {
     display: flex;
     white-space: nowrap;
-    -webkit-animation: scrollLeft 15s linear infinite !important;
-    animation: scrollLeft 15s linear infinite !important;
-    -webkit-animation-play-state: running !important;
-    animation-play-state: running !important;
+    animation: scrollLeft 15s linear infinite;
+    -webkit-overflow-scrolling: touch;
     will-change: transform;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -2626,8 +2605,7 @@
   }
 
   .headline-scroll.reverse {
-    -webkit-animation: scrollRight 15s linear infinite !important;
-    animation: scrollRight 15s linear infinite !important;
+    animation: scrollRight 15s linear infinite;
   }
 }
 
@@ -2635,5 +2613,129 @@
 @media (max-width: 480px) {
   .image, .profile-img {
     object-position: center top !important;
+  }
+}
+
+/* ========================================
+   DESKTOP & LAPTOP OPTIMIZATIONS (1024px+)
+   ======================================== */
+
+/* Desktop: Optimize hero section spacing */
+@media (min-width: 1024px) {
+  .hero-section {
+    padding: 0px 120px 20px 120px;
+  }
+
+  .hero-content-wrapper {
+    gap: 80px;
+  }
+
+  .image-box {
+    max-width: 450px;
+  }
+
+  .image, .profile-img {
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .hero-text-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-text-content p {
+    font-size: 18px;
+  }
+}
+
+/* Large Desktop: Optimize for wide screens (1400px+) */
+@media (min-width: 1400px) {
+  .overlay h1 {
+    font-size: 12rem;
+  }
+
+  .box {
+    max-width: 1400px;
+    padding: 30px 60px;
+  }
+
+  .box-p {
+    font-size: 1.15rem;
+  }
+
+  .hero-section {
+    padding: 0px 150px 20px 150px;
+  }
+
+  .hero-content-wrapper {
+    gap: 120px;
+  }
+
+  .image-box {
+    max-width: 500px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 4rem;
+  }
+
+  .footer-left {
+    padding-left: 80px;
+  }
+
+  .gif-grid {
+    margin-left: 150px;
+  }
+}
+
+/* Extra Large Desktop: Maximum optimization (1920px+) */
+@media (min-width: 1920px) {
+  .overlay h1 {
+    font-size: 14rem;
+  }
+
+  .hero-section {
+    padding: 0px 200px 20px 200px;
+  }
+
+  .card-heading {
+    font-size: 120px;
+  }
+
+  .card-para {
+    font-size: 1.6rem;
+  }
+}
+
+/* Desktop: Fix footer alignment */
+@media (min-width: 1024px) {
+  .footer-section {
+    padding: 90px 120px;
+  }
+
+  .footer-left {
+    padding-left: 80px;
+  }
+
+  .info-section {
+    margin-left: 150px;
+  }
+
+  .gif-grid {
+    margin-left: 100px;
+  }
+}
+
+/* Desktop: Improve connect headline */
+@media (min-width: 1024px) {
+  .connect-headline h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .connect-headline h1 {
+    font-size: 6.5rem;
   }
 }

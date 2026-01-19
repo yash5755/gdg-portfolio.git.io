@@ -43,10 +43,9 @@ html, body, #root {
   position: relative;
 }
 
-/* Keep layout centered and constrained on very wide viewports
-   (prevents layout break when mobile browsers request desktop site) */
+/* Desktop layout - allow full width for proper display */
 .app {
-  max-width: 1326px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0;
 }

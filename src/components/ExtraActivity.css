@@ -422,6 +422,67 @@
   }
 }
 
+/* ========================================
+   DESKTOP & LAPTOP OPTIMIZATIONS
+   ======================================== */
+
+/* Desktop: Optimize for larger screens (1024px+) */
+@media (min-width: 1024px) {
+  .extra-page {
+    padding: 120px 120px 40px 120px;
+  }
+
+  .extra-container {
+    max-width: 1400px;
+    gap: 80px;
+    padding: 0 60px;
+  }
+
+  .extra-card {
+    padding: 40px 70px;
+    gap: 80px;
+  }
+
+  .extra-back-button {
+    top: 35px;
+    left: 60px;
+    padding: 10px 50px;
+    font-size: 19px;
+  }
+}
+
+/* Large Desktop: Further optimization (1400px+) */
+@media (min-width: 1400px) {
+  .extra-page {
+    padding: 140px 150px 50px 150px;
+  }
+
+  .extra-title {
+    font-size: 84px;
+  }
+
+  .extra-subtitle {
+    font-size: 20px;
+  }
+
+  .extra-container {
+    max-width: 1500px;
+    gap: 100px;
+  }
+
+  .extra-card {
+    padding: 45px 80px;
+    gap: 90px;
+  }
+}
+
+/* Extra Large Desktop (1920px+) */
+@media (min-width: 1920px) {
+  .extra-container {
+    max-width: 1800px;
+  }
+}
+
 
 
 .custom-cursor {
