@@ -278,6 +278,8 @@
   color: #4c4c4c;
   letter-spacing: 0.8px;
   margin-top: -20px;
+  text-align: justify;
+  line-height: 1.7;
 }
 
 
@@ -443,13 +445,15 @@
   width: 100%;
   height: 85px;
   background-color: rgb(61, 195, 213);
-  border-radius: 0 0 50px 50px;
+  border-radius: 0;
   z-index: 2;
   overflow: hidden;
   display: flex;
   align-items: center;
   padding-top: 15px;
   margin-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .headline-scroll {
@@ -1544,11 +1548,13 @@
   }
 
   .card-section {
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 2rem 0.5rem 2rem 0.5rem;
+    margin-bottom: 0;
   }
 
   .mobile-see-all-container {
     display: flex !important;
+    margin-bottom: 1rem;
   }
 
   /* Glass Box - Mobile Optimized */
@@ -1645,7 +1651,10 @@
   .card-left p,
   .card-right p {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.8;
+    text-align: justify;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   /* Skills Grid - Mobile Optimized */
@@ -2578,11 +2587,14 @@
 
   .headline {
     overflow: hidden;
-    height: 85px;
-    padding-top: 15px;
+    height: 65px;
+    padding-top: 10px;
     position: relative;
-    margin-top: 25px;
+    margin-top: 0;
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
   }
 
   .headline-scroll {
@@ -2596,7 +2608,7 @@
   }
 
   .headline-text {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .arrow {
