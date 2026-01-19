@@ -464,6 +464,8 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -webkit-overflow-scrolling: touch;
+  z-index: 10;
+  position: relative;
 }
 
 /* Generate repeating text using pseudo-elements */
@@ -1747,7 +1749,7 @@
 
   /* Featured News - Mobile */
   .featured-news {
-    padding: 80px 30px 60px;
+    padding: 20px 30px 60px;
     border-radius: 30px;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
