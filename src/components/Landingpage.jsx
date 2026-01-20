@@ -504,12 +504,12 @@ Grateful for the experience and excited to grow further!
             </a>
 
             <a
-              href="https://x.com/"
+              href="https://github.com/yash5755/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
             >
-              <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525708/twitter_o3dl7u.png" alt="Twitter" />
+              <img src="https://res.cloudinary.com/ddo4qy8bi/image/upload/v1768929824/git_logo_wi3mxl.png" alt="Github" />
             </a>
 
             <a
