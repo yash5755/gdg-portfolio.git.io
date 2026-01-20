@@ -2589,10 +2589,10 @@
 
   .headline {
     overflow: visible;
-    height: 65px;
-    padding-top: 20px;
+    height: 70px;
+    padding-top: 24px;
     position: relative;
-    margin-top: 12px;
+    margin-top: 16px;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -2613,7 +2613,7 @@
   }
 
   .headline-text {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .arrow {
