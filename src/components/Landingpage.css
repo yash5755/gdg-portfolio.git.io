@@ -2581,6 +2581,21 @@
 
 /* Mobile-specific headline fixes */
 @media (max-width: 768px) {
+  .landing {
+    position: relative;
+    height: 100svh;
+  }
+
+  .hero-section {
+    margin-top: 0;
+    padding-top: 100svh;
+  }
+
+  .card-section {
+    position: relative;
+    top: auto;
+  }
+
   .video-grid-section {
     min-height: auto;
     flex-direction: column;
@@ -2597,7 +2612,7 @@
     padding-left: 0;
     padding-right: 0;
     border-radius: 0;
-    z-index: 100;
+    z-index: 120;
   }
 
   .headline-scroll {
@@ -2608,7 +2623,7 @@
     will-change: transform;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    z-index: 101;
+    z-index: 121;
     position: relative;
   }
 
