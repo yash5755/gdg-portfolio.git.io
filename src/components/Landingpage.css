@@ -1199,6 +1199,24 @@
   filter: none;
 }
 
+/* Visitor Counter */
+.visitor-counter {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.visitor-counter img {
+  height: 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.visitor-counter img:hover {
+  opacity: 1;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .footer-left {
@@ -1212,6 +1230,10 @@
   }
 
   .footer-socials {
+    justify-content: center;
+  }
+
+  .visitor-counter {
     justify-content: center;
   }
 }

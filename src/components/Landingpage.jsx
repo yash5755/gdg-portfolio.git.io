@@ -521,6 +521,11 @@ Grateful for the experience and excited to grow further!
               <img src="https://res.cloudinary.com/dphe5xhwj/image/upload/v1765525705/whatsapp_yo1hkj.png" alt="whatsapp" />
             </a>
           </div>
+
+          {/* Visitor Counter */}
+          <div className="visitor-counter">
+            <img src="https://hits.sh/yashoneth.site.svg?style=flat&label=Visitors&color=4db5ff" alt="Visitor Counter" />
+          </div>
         </div>
 
 
