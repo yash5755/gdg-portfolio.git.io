@@ -7,6 +7,8 @@ import Particles from "./Particles";
 
 function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
   const [showAll, setShowAll] = useState(false);
+  const [visitorCount, setVisitorCount] = useState(null);
+  const [visitorError, setVisitorError] = useState(false);
 
   const scrollToContact = () => {
     const el = document.getElementById("contact");
@@ -14,6 +16,69 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+
+  // Inject GoatCounter script once to record unique visits (bot-filtered).
+  useEffect(() => {
+    const existing = document.querySelector('script[data-goatcounter]');
+    if (existing) return undefined;
+
+    const script = document.createElement('script');
+    script.setAttribute('data-goatcounter', 'https://yashoneth.goatcounter.com/count');
+    script.async = true;
+    script.src = 'https://gc.zgo.at/count.js';
+    document.body.appendChild(script);
+
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
+
+  // Pull the unique visitor count from GoatCounter for display in the footer.
+  useEffect(() => {
+    let cancelled = false;
+
+    const parseCount = (data) => {
+      if (!data || typeof data !== 'object') return null;
+      return (
+        data.count ||
+        data.unique ||
+        data.total ||
+        data?.counts?.unique ||
+        data?.totals?.unique ||
+        null
+      );
+    };
+
+    const fetchCount = async () => {
+      try {
+        const res = await fetch('https://yashoneth.goatcounter.com/counter/portfolio.json', {
+          cache: 'no-store',
+          mode: 'cors',
+        });
+        if (!res.ok) throw new Error('failed to load visitor count');
+        const data = await res.json();
+        const count = parseCount(data);
+        if (!cancelled && count !== null) {
+          setVisitorCount(Number(count));
+          setVisitorError(false);
+        }
+      } catch (err) {
+        if (!cancelled) {
+          setVisitorError(true);
+        }
+      }
+    };
+
+    fetchCount();
+    const interval = setInterval(fetchCount, 60000);
+
+    return () => {
+      cancelled = true;
+      clearInterval(interval);
+    };
+  }, []);
 
 
   useEffect(() => {
@@ -524,7 +589,12 @@ Grateful for the experience and excited to grow further!
 
           {/* Visitor Counter */}
           <div className="visitor-counter">
-            <img src="https://hits.sh/yashoneth.site.svg?style=flat&label=Visitors&color=4db5ff" alt="Visitor Counter" />
+            <span className="visitor-label">Unique visitors</span>
+            {visitorCount !== null && !visitorError ? (
+              <span className="visitor-value">{visitorCount.toLocaleString()}</span>
+            ) : (
+              <span className="visitor-value dim">Loading…</span>
+            )}
           </div>
         </div>
 

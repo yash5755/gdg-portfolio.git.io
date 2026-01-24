@@ -1205,16 +1205,24 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 8px;
 }
 
-.visitor-counter img {
-  height: 20px;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+.visitor-label {
+  font-size: 0.9rem;
+  color: #cfcfcf;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.visitor-counter img:hover {
-  opacity: 1;
+.visitor-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4db5ff;
+}
+
+.visitor-value.dim {
+  opacity: 0.7;
 }
 
 /* Responsive */
