@@ -53,14 +53,17 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
 
     const fetchCount = async () => {
       try {
-        // GoatCounter counts this page as '/' so we fetch that path's stats.
-        const res = await fetch('https://yashoneth.goatcounter.com/counter/%2F.json', {
+        // Fetch total unique visitors from GoatCounter stats endpoint
+        const res = await fetch('https://yashoneth.goatcounter.com/api/v0/stats/total', {
           cache: 'no-store',
-          mode: 'cors',
+          headers: {
+            'Accept': 'application/json',
+          },
         });
         if (!res.ok) throw new Error('failed to load visitor count');
         const data = await res.json();
-        const count = parseCount(data);
+        // GoatCounter API returns {total_unique: number}
+        const count = data?.total_unique || data?.total || parseCount(data);
         if (!cancelled && count !== null) {
           setVisitorCount(Number(count));
           setVisitorError(false);
@@ -590,7 +593,7 @@ Grateful for the experience and excited to grow further!
 
           {/* Visitor Counter */}
           <div className="visitor-counter">
-            <span className="visitor-label">Unique visitors</span>
+            <span className="visitor-label">Visitors</span>
             {visitorCount !== null && !visitorError ? (
               <span className="visitor-value">{visitorCount.toLocaleString()}</span>
             ) : visitorError ? (

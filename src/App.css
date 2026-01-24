@@ -39,8 +39,11 @@ html, body, #root {
 .app {
   width: 100%;
   min-height: 100%;
-  overflow-y: auto;      /* scroll inner content */
+  overflow-y: auto;
+  overflow-x: hidden;
   position: relative;
+  overscroll-behavior-x: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Desktop layout - allow full width for proper display */
