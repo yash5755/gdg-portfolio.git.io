@@ -53,7 +53,8 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
 
     const fetchCount = async () => {
       try {
-        const res = await fetch('https://yashoneth.goatcounter.com/counter/portfolio.json', {
+        // GoatCounter counts this page as '/' so we fetch that path's stats.
+        const res = await fetch('https://yashoneth.goatcounter.com/counter/%2F.json', {
           cache: 'no-store',
           mode: 'cors',
         });
@@ -592,6 +593,8 @@ Grateful for the experience and excited to grow further!
             <span className="visitor-label">Unique visitors</span>
             {visitorCount !== null && !visitorError ? (
               <span className="visitor-value">{visitorCount.toLocaleString()}</span>
+            ) : visitorError ? (
+              <span className="visitor-value dim">Offline</span>
             ) : (
               <span className="visitor-value dim">Loading…</span>
             )}
