@@ -53,17 +53,14 @@ function LandingPage({ onSeeAllProjects, onSeeMoreActivities }) {
 
     const fetchCount = async () => {
       try {
-        // Fetch total unique visitors from GoatCounter stats endpoint
-        const res = await fetch('https://yashoneth.goatcounter.com/api/v0/stats/total', {
+        // Fetch visitor count from GoatCounter public API (must enable in settings)
+        const res = await fetch('https://yashoneth.goatcounter.com/counter//.json', {
           cache: 'no-store',
-          headers: {
-            'Accept': 'application/json',
-          },
         });
         if (!res.ok) throw new Error('failed to load visitor count');
         const data = await res.json();
-        // GoatCounter API returns {total_unique: number}
-        const count = data?.total_unique || data?.total || parseCount(data);
+        // GoatCounter counter endpoint returns {count: number, count_unique: number}
+        const count = data?.count_unique || data?.count || parseCount(data);
         if (!cancelled && count !== null) {
           setVisitorCount(Number(count));
           setVisitorError(false);
