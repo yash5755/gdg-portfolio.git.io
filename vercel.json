@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "aws.yashoneth.site"
+        }
+      ],
+      "destination": "https://bit.ly/42jWjL1",
+      "permanent": true
+    }
+  ]
+}
